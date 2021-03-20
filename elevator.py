@@ -55,7 +55,7 @@ class Person:
 
 		is_britt = random() < PERCENTAGE_BRITT
 		if is_britt:
-			direction = Direction.UP if elevator_current_floor > current_floor else Direction.DOWN
+			direction = Direction.DOWN if elevator_current_floor > current_floor else Direction.UP
 		else:
 			direction = Direction.UP if desired_floor > current_floor else Direction.DOWN
 		return Person(current_floor, desired_floor, direction, turn)
